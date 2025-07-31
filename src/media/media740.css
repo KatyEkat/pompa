@@ -1,0 +1,97 @@
+@media (min-width: 740px) {
+  .product-card__name-desc {
+    margin: 0;
+    font-size: clamp(0.6875rem, 0.6711rem + 0.0877vw, 0.75rem);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.55px;
+    height: 2.4em;
+    overflow: hidden;
+    text-transform: uppercase;
+    display: flex;
+    font-family: "Manrope";
+  }
+  .product-grid {
+    padding: 30px 35px;
+  }
+  .product-card__name-mob {
+    display: none;
+  }
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 10px;
+  }
+  .product-card__arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    border: unset;
+    background: unset;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+  }
+  .product-card__arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+  .product-card__arrow--left {
+    left: 8px;
+  }
+  .product-card__arrow--right {
+    right: 8px;
+  }
+  .product-card__sizes-hover {
+    position: absolute;
+    height: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background: var(--bg-white);
+    padding: 6px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: none;
+    transform: 0.2s;
+  }
+  .product-card:hover .product-card__arrow,
+  .product-card:hover .product-card__sizes-hover {
+    display: flex;
+    align-items: center;
+  }
+  .product-card__sizes-hover > span:hover {
+    cursor: pointer;
+  }
+  .kto-eto-yvidit-napishi-mne {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .product-card__details {
+    width: 100%;
+  }
+  .product-card__miniblock_desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .product-card:hover .product-card__save {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .product-card__info {
+    padding: 0;
+  }
+  .product-card__dots {
+    display: none;
+  }
+  .product-card__overlay {
+    display: none;
+  }
+}/*# sourceMappingURL=media740.css.map */
