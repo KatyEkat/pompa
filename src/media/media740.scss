@@ -10,6 +10,7 @@
 		text-transform: uppercase;
 		display: flex;
 		font-family: "Manrope";
+		max-width: 357px;
 	}
 
 	.product-grid {
@@ -66,7 +67,7 @@
 		left: 0;
 		right: 0;
 		display: flex;
-		gap: 10px;
+		gap: 15px;
 		justify-content: center;
 		background: var(--bg-white);
 		padding: 6px 10px;
@@ -82,8 +83,18 @@
 		align-items: center;
 	}
 
+	.product-card:hover .product-card__dots {
+		display: flex;
+		position: absolute;
+		bottom: 50px;
+	}
+
 	.product-card__sizes-hover > span:hover {
 		cursor: pointer;
+	}
+
+	.product-card__dots {
+		display: none;
 	}
 
 	.kto-eto-yvidit-napishi-mne {
@@ -114,11 +125,12 @@
 		padding: 0;
 	}
 
-	.product-card__dots {
+	.product-card__overlay {
 		display: none;
 	}
 
-	.product-card__overlay {
-		display: none;
+	.product-card__discount {
+		color: var(--price-primary);
+		font-weight: 700;
 	}
 }

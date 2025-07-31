@@ -71,8 +71,8 @@ a {
 }
 
 .product-card__dot {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -113,6 +113,23 @@ a {
   display: none;
 }
 
+.kto-eto-yvidit-napishi-mne {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-card__sizes-hover span.disabled {
+  color: gray;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.product-card__sizes-hover span.selected {
+  border-bottom: 2px solid rgb(30, 33, 38);
+  font-weight: 700;
+}
+
 .product-card__name-mob {
   font-family: "Manrope";
   margin: 0;
@@ -120,10 +137,12 @@ a {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.55px;
-  height: 2.4em;
-  overflow: hidden;
   text-transform: uppercase;
-  display: flex;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-card__price--old {
@@ -172,17 +191,18 @@ a {
   color: var(--price-gold);
   font-size: 11px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .product-card__discount {
   color: var(--price-primary);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .product-card__colors {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
 }
 
 .product-card__color {
@@ -301,7 +321,7 @@ a {
 }
 
 .size-selector__heading {
-  width: 135px;
+  width: 115px;
   color: var(--text-primary);
   font-family: "Manrope";
   font-size: 12px;
@@ -324,6 +344,12 @@ a {
   cursor: pointer;
 }
 
+.size-selector__size.disabled {
+  color: gray;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .size-selector__link {
   font-family: "Manrope";
   font-size: 14px;
@@ -337,13 +363,20 @@ a {
 }
 
 .size-selector__button {
+  height: 31px;
+  font-family: "Manrope";
+  font-weight: 400;
   width: 100%;
-  padding: 12px;
   background-color: var(--text-primary);
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: "Regular";
+  font-size: 12px;
 }
 
 .products-section {
@@ -355,7 +388,6 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 8px;
-  padding: 0 8px;
 }
 
 .size-selector__priceBlock {
@@ -389,7 +421,6 @@ a {
 }
 
 .cart-notification {
-  /* Frame 2776 */
   position: fixed;
   width: 252px;
   height: 44px;
@@ -397,7 +428,7 @@ a {
   bottom: 0;
   display: none;
   padding: 10px 14px 10px 14px;
-  background: rgba(121, 131, 147, 0.95);
+  background: #798393;
 }
 
 .cart-notification.show {
