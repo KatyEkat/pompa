@@ -12,7 +12,7 @@ HTML, SCSS (CSS), JavaScript
 
 ## Project link
 
-https://pompa-awxe.vercel.app/
+https://pompa-tau.vercel.app/
 
 ## Instructions for launching the project
 <p>1. Clone the project from the repository on your pc with the command in the console.</p>
