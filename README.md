@@ -15,24 +15,13 @@ HTML, SCSS (CSS), JavaScript
 https://pompa-awxe.vercel.app/
 
 ## Instructions for launching the project
-
 <p>1. Clone the project from the repository on your pc with the command in the console.</p>
 
 ### `git clone`
 
-<p>2. Install dependencies </p>
+<p>2. Start the proj via Live server</p>
 
-### `npm install`
-
-3. Build proj via command
-
-### `npm run build`
-
-4. Start proj via command
-
-### `npm run preview`
-
-5. Open http://localhost:4173/ and enjoy
+Open [http://localhost:5500](http://localhost:5500) to view it in your browser.
 
 
 ### Contacts for communication on all issues
